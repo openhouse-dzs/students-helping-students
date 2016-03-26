@@ -9,7 +9,7 @@ app.disable('x-powered-by');
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 app.set('port', process.env.PORT || 3000);
-app.use(favicon(__dirname + '/public/img/favicon.png'));
+app.use(favicon(__dirname + '/public/images/powercat.png'));
 app.use(sessions({
   cookieName: 'session',
   secret: 'somerandomstring',
